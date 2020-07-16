@@ -31,7 +31,7 @@ function get_bro(){
              $exp[0] = "IE";  
          $exp[1] = $IE[1];  
      }else {  
-        $exp[0] = "未知浏览器";  
+        $exp[0] = "未知";  
         $exp[1] = "";   
      }  
      return $exp[0].'('.$exp[1].')';  
@@ -163,7 +163,7 @@ $agent = $_SERVER['HTTP_USER_AGENT'];
     }  
     else  
     {  
-      $os = '未知操作系统';  
+      $os = '未知';  
     }  
     return $os;    
 }  
